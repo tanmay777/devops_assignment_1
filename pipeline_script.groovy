@@ -32,7 +32,7 @@ pipeline {
   
     post {
             success {
-                sh 'JENKINS_NODE_COOKIE=dontkill nohup java -jar target/spring-petclinic-3.1.0-SNAPSHOT.jar --server.port=8085 &'
+                sh 'JENKINS_NODE_COOKIE=dontkill nohup java -jar target/spring-petclinic-3.2.0-SNAPSHOT.jar --server.port=8085 &'
             }
     }        
 }
